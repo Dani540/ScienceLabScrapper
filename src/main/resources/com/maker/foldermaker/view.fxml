@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="flowPane" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.maker.foldermaker.controller.ViewController"
+          prefHeight="320.0" prefWidth="240.0">
+    <VBox fx:id="vBoxContainer">
+        <HBox alignment="CENTER">
+            <Button fx:id="buttonConfig" onAction="#onConfigAction" text="Config ⚙" />
+            <Button fx:id="buttonUser" onAction="#onUserAction" text="User 👤" />
+        </HBox>
+        <TextField fx:id="textFieldNumberOfLab" alignment="CENTER" promptText="Number Of Lab"/>
+        <CheckBox fx:id="checkBoxDownloadFiles" text="Download Files"/>
+        <Button fx:id="buttonDone" text="Done" onAction="#onDone"/>
+    </VBox>
+</FlowPane>

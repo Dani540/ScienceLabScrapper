@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane fx:id="flowPane" xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.maker.foldermaker.controller.ConfigController"
+          prefHeight="320.0" prefWidth="240.0">
+    <VBox fx:id="vBoxContainer">
+        <TextField fx:id="textFieldNumberOfGroups" promptText="Number Of Groups" alignment="CENTER"/>
+        <TextField fx:id="textFieldRouteToCreateFolder" promptText="Route To Create Folder" alignment="CENTER"/>
+        <TextField fx:id="textFieldNameOfMainFolder" promptText="Name Of Main Folder" alignment="CENTER"/>
+        <CheckBox fx:id="checkLabNumberUse" text="Use Lab Number"/>
+        <TextField fx:id="textFieldMainUri" promptText="Main Uri" alignment="CENTER"/>
+        <Button fx:id="buttonSave" text="Save" onAction="#onSave"/>
+    </VBox>
+</FlowPane>

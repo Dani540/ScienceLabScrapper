@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<FlowPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.maker.foldermaker.controller.UserController"
+          prefHeight="320.0" prefWidth="240.0"
+            alignment="CENTER">
+        <VBox fx:id="vBoxContainer" prefWidth="200" prefHeight="200">
+            <TextField fx:id="textFieldUsername" promptText="Username" alignment="CENTER" />
+            <PasswordField fx:id="passFieldPassword" promptText="Password" alignment="CENTER" />
+            <HBox alignment="CENTER" >
+                <Button fx:id="buttonEnter" text="Save Credentials" onAction="#setCredentials" alignment="CENTER" />
+            </HBox>
+        </VBox>
+</FlowPane>
